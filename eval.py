@@ -1,6 +1,10 @@
 """Score extraction predictions against gold. No API calls.
 
-Usage: python eval.py runs/<label> [--strict]
+Usage: python eval.py runs/<label> [--strict] [--labels <dir>]
+
+--labels <dir> scores against <dir>/<stem>.json instead of gold/ (gold_corrections.json is then ignored, and
+output goes to eval_<dir>.json). A labels file with an empty tests list makes every predicted row an unmatched
+(critical) row.
 
 --strict reproduces v1 (name equality, abbreviation, similarity >= 0.8 only; no trailing-unit stripping on
 reference ranges) and writes eval_strict.json.
@@ -181,22 +185,31 @@ def load_rows(path: Path):
 
 
 def main() -> None:
-    strict = "--strict" in sys.argv
-    args = [a for a in sys.argv[1:] if a != "--strict"]
+    args = sys.argv[1:]
+    strict = "--strict" in args
+    args = [a for a in args if a != "--strict"]
+    labels = Path("gold")
+    if "--labels" in args:
+        i = args.index("--labels")
+        if i + 1 >= len(args):
+            sys.exit(__doc__)
+        labels = Path(args[i + 1])
+        del args[i:i + 2]
     if len(args) != 1:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding="utf-8")
     run = Path(args[0])
-    golds = {p.stem: load_rows(p) for p in sorted(Path("gold").glob("*.json"))}
+    is_gold = labels.resolve() == Path("gold").resolve()
+    golds = {p.stem: load_rows(p) for p in sorted(labels.glob("*.json"))}
     preds = {stem: load_rows(run / f"{stem}.json") for stem in golds}
     output = {"original": evaluate(golds, preds, strict)}
-    show("original gold", output["original"])
+    show("original gold" if is_gold else f"labels: {labels}", output["original"])
     corrections = Path("gold_corrections.json")
-    if corrections.exists():
+    if is_gold and corrections.exists():
         fixed = apply_corrections(golds, json.loads(corrections.read_text(encoding="utf-8")))
         output["corrected"] = evaluate(fixed, preds, strict)
         show("corrected gold", output["corrected"])
-    out_path = run / ("eval_strict.json" if strict else "eval.json")
+    out_path = run / f"eval{'_strict' if strict else ''}{'' if is_gold else '_' + labels.name}.json"
     out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\nWrote {out_path}")
 
