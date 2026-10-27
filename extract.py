@@ -82,10 +82,15 @@ def call_model(images: list[tuple[str, str]]) -> str:
 
 def parse(text: str) -> list[dict]:
     match = re.search(r"\{.*\}", text, re.DOTALL)
+    if not match:
+        raise RuntimeError("Model reply has no JSON object.")
     try:
-        return json.loads(match.group(0))["tests"]
-    except Exception:
-        return []
+        tests = json.loads(match.group(0)).get("tests")
+    except json.JSONDecodeError:
+        raise RuntimeError("Model reply is not valid JSON.") from None
+    if not isinstance(tests, list):
+        raise RuntimeError('Model reply has no "tests" list.')
+    return tests
 
 
 def clean(tests: list[dict]) -> list[dict]:
