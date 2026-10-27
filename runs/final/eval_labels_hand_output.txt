@@ -1,0 +1,13 @@
+
+== labels: labels_hand ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_04       9    9  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_07      10   10  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_10       9    9  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_12       0    0    -      -      -      -      -      -        0      0    0     -  
+TOTAL          28   28  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+critical = wrong values (0) + unmatched predicted rows (0)
+
+Mismatches (labels: labels_hand):
+
+Wrote runs\final\eval_labels_hand.json
