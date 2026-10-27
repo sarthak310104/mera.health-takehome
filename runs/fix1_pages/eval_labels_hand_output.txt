@@ -1,0 +1,24 @@
+
+== labels: labels_hand ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_04       9    9  100.0  100.0  100.0  100.0  100.0  100.0      0      0    2    77.8
+report_07      10   10  100.0  100.0   90.0  100.0  100.0   90.0      0      1    1    80.0
+report_10       9    9  100.0  100.0  100.0  100.0  100.0  100.0      0      0    7     0.0
+report_12       0    0    -      -      -      -      -      -        0      0    0     -  
+TOTAL          28   28  100.0  100.0   96.4  100.0  100.0   96.4      0      1   10    53.6
+critical = wrong values (1) + unmatched predicted rows (0)
+
+Mismatches (labels: labels_hand):
+  report_04 | Glucose - Fasting | name (position-matched) | gold='Glucose - Fasting' | pred='Fasting Blood Glucose'
+  report_04 | Glucose - PP | name (position-matched) | gold='Glucose - PP' | pred='Postprandial Blood Glucose'
+  report_07 | Serum Globulin | value | gold='3.1' | pred=3.3
+  report_07 | ALP | name (position-matched) | gold='ALP' | pred='Alkaline Phosphatase'
+  report_10 | TSH (Ultrasensitive) | name (position-matched) | gold='TSH (Ultrasensitive)' | pred='Thyroid Stimulating Hormone (TSH)'
+  report_10 | S. Urea | name (position-matched) | gold='S. Urea' | pred='Serum Urea'
+  report_10 | S. Creatinine | name (position-matched) | gold='S. Creatinine' | pred='Serum Creatinine'
+  report_10 | S. Uric Acid | name (position-matched) | gold='S. Uric Acid' | pred='Serum Uric Acid'
+  report_10 | S. Sodium | name (position-matched) | gold='S. Sodium' | pred='Serum Sodium'
+  report_10 | S. Potassium | name (position-matched) | gold='S. Potassium' | pred='Serum Potassium'
+  report_10 | S. Chloride | name (position-matched) | gold='S. Chloride' | pred='Serum Chloride'
+
+Wrote runs\fix1_pages\eval_labels_hand.json

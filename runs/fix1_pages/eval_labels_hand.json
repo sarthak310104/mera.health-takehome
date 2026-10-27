@@ -1,0 +1,195 @@
+{
+  "original": {
+    "reports": {
+      "report_04": {
+        "gold": 9,
+        "pred": 9,
+        "matched": 9,
+        "pos": 2,
+        "name_exact": 7,
+        "value_ok": 9,
+        "unit_ok": 9,
+        "range_ok": 9,
+        "full": 9,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.7777777777777778
+      },
+      "report_07": {
+        "gold": 10,
+        "pred": 10,
+        "matched": 10,
+        "pos": 1,
+        "name_exact": 8,
+        "value_ok": 9,
+        "unit_ok": 10,
+        "range_ok": 10,
+        "full": 9,
+        "invented": 0,
+        "wrong_value": 1,
+        "extra": 0,
+        "critical": 1,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 0.9,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.9,
+        "name_exact_acc": 0.8
+      },
+      "report_10": {
+        "gold": 9,
+        "pred": 9,
+        "matched": 9,
+        "pos": 7,
+        "name_exact": 0,
+        "value_ok": 9,
+        "unit_ok": 9,
+        "range_ok": 9,
+        "full": 9,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.0
+      },
+      "report_12": {
+        "gold": 0,
+        "pred": 0,
+        "matched": 0,
+        "pos": 0,
+        "name_exact": 0,
+        "value_ok": 0,
+        "unit_ok": 0,
+        "range_ok": 0,
+        "full": 0,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": null,
+        "precision": null,
+        "value_acc": null,
+        "unit_acc": null,
+        "range_acc": null,
+        "full_acc": null,
+        "name_exact_acc": null
+      }
+    },
+    "totals": {
+      "gold": 28,
+      "pred": 28,
+      "matched": 28,
+      "pos": 10,
+      "name_exact": 15,
+      "value_ok": 27,
+      "unit_ok": 28,
+      "range_ok": 28,
+      "full": 27,
+      "invented": 0,
+      "wrong_value": 1,
+      "extra": 0,
+      "critical": 1,
+      "recall": 1.0,
+      "precision": 1.0,
+      "value_acc": 0.9642857142857143,
+      "unit_acc": 1.0,
+      "range_acc": 1.0,
+      "full_acc": 0.9642857142857143,
+      "name_exact_acc": 0.5357142857142857
+    },
+    "mismatches": [
+      {
+        "report": "report_04",
+        "test": "Glucose - Fasting",
+        "field": "name (position-matched)",
+        "gold": "Glucose - Fasting",
+        "predicted": "Fasting Blood Glucose"
+      },
+      {
+        "report": "report_04",
+        "test": "Glucose - PP",
+        "field": "name (position-matched)",
+        "gold": "Glucose - PP",
+        "predicted": "Postprandial Blood Glucose"
+      },
+      {
+        "report": "report_07",
+        "test": "Serum Globulin",
+        "field": "value",
+        "gold": "3.1",
+        "predicted": 3.3
+      },
+      {
+        "report": "report_07",
+        "test": "ALP",
+        "field": "name (position-matched)",
+        "gold": "ALP",
+        "predicted": "Alkaline Phosphatase"
+      },
+      {
+        "report": "report_10",
+        "test": "TSH (Ultrasensitive)",
+        "field": "name (position-matched)",
+        "gold": "TSH (Ultrasensitive)",
+        "predicted": "Thyroid Stimulating Hormone (TSH)"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Urea",
+        "field": "name (position-matched)",
+        "gold": "S. Urea",
+        "predicted": "Serum Urea"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Creatinine",
+        "field": "name (position-matched)",
+        "gold": "S. Creatinine",
+        "predicted": "Serum Creatinine"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Uric Acid",
+        "field": "name (position-matched)",
+        "gold": "S. Uric Acid",
+        "predicted": "Serum Uric Acid"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Sodium",
+        "field": "name (position-matched)",
+        "gold": "S. Sodium",
+        "predicted": "Serum Sodium"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Potassium",
+        "field": "name (position-matched)",
+        "gold": "S. Potassium",
+        "predicted": "Serum Potassium"
+      },
+      {
+        "report": "report_10",
+        "test": "S. Chloride",
+        "field": "name (position-matched)",
+        "gold": "S. Chloride",
+        "predicted": "Serum Chloride"
+      }
+    ]
+  }
+}

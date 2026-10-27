@@ -1,0 +1,1439 @@
+{
+  "original": {
+    "reports": {
+      "report_01": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 0,
+        "name_exact": 10,
+        "value_ok": 13,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 13,
+        "invented": 0,
+        "wrong_value": 1,
+        "extra": 0,
+        "critical": 1,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 0.9285714285714286,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.9285714285714286,
+        "name_exact_acc": 0.7142857142857143
+      },
+      "report_02": {
+        "gold": 16,
+        "pred": 16,
+        "matched": 16,
+        "pos": 3,
+        "name_exact": 8,
+        "value_ok": 16,
+        "unit_ok": 16,
+        "range_ok": 16,
+        "full": 16,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.5
+      },
+      "report_03": {
+        "gold": 8,
+        "pred": 8,
+        "matched": 8,
+        "pos": 4,
+        "name_exact": 0,
+        "value_ok": 8,
+        "unit_ok": 8,
+        "range_ok": 5,
+        "full": 5,
+        "invented": 3,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 0.625,
+        "full_acc": 0.625,
+        "name_exact_acc": 0.0
+      },
+      "report_05": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 1,
+        "name_exact": 9,
+        "value_ok": 14,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 14,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.6428571428571429
+      },
+      "report_06": {
+        "gold": 12,
+        "pred": 7,
+        "matched": 2,
+        "pos": 1,
+        "name_exact": 0,
+        "value_ok": 1,
+        "unit_ok": 2,
+        "range_ok": 2,
+        "full": 1,
+        "invented": 0,
+        "wrong_value": 1,
+        "extra": 5,
+        "critical": 6,
+        "recall": 0.16666666666666666,
+        "precision": 0.2857142857142857,
+        "value_acc": 0.5,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.08333333333333333,
+        "name_exact_acc": 0.0
+      },
+      "report_08": {
+        "gold": 6,
+        "pred": 6,
+        "matched": 6,
+        "pos": 6,
+        "name_exact": 0,
+        "value_ok": 6,
+        "unit_ok": 5,
+        "range_ok": 6,
+        "full": 5,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 0.8333333333333334,
+        "range_acc": 1.0,
+        "full_acc": 0.8333333333333334,
+        "name_exact_acc": 0.0
+      },
+      "report_09": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 4,
+        "name_exact": 10,
+        "value_ok": 14,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 14,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.7142857142857143
+      },
+      "report_11": {
+        "gold": 54,
+        "pred": 46,
+        "matched": 43,
+        "pos": 20,
+        "name_exact": 18,
+        "value_ok": 43,
+        "unit_ok": 43,
+        "range_ok": 43,
+        "full": 43,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 3,
+        "critical": 3,
+        "recall": 0.7962962962962963,
+        "precision": 0.9347826086956522,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.7962962962962963,
+        "name_exact_acc": 0.4186046511627907
+      }
+    },
+    "totals": {
+      "gold": 138,
+      "pred": 125,
+      "matched": 117,
+      "pos": 39,
+      "name_exact": 55,
+      "value_ok": 115,
+      "unit_ok": 116,
+      "range_ok": 114,
+      "full": 111,
+      "invented": 3,
+      "wrong_value": 2,
+      "extra": 8,
+      "critical": 10,
+      "recall": 0.8478260869565217,
+      "precision": 0.936,
+      "value_acc": 0.9829059829059829,
+      "unit_acc": 0.9914529914529915,
+      "range_acc": 0.9743589743589743,
+      "full_acc": 0.8043478260869565,
+      "name_exact_acc": 0.4700854700854701
+    },
+    "mismatches": [
+      {
+        "report": "report_01",
+        "test": "Platelet Count",
+        "field": "value",
+        "gold": "304000",
+        "predicted": 340000.0
+      },
+      {
+        "report": "report_02",
+        "test": "Serum Triglycerides",
+        "field": "name (position-matched)",
+        "gold": "Serum Triglycerides",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_02",
+        "test": "TC/HDL Ratio",
+        "field": "name (position-matched)",
+        "gold": "TC/HDL Ratio",
+        "predicted": "Total Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_02",
+        "test": "ALP",
+        "field": "name (position-matched)",
+        "gold": "ALP",
+        "predicted": "Alkaline Phosphatase"
+      },
+      {
+        "report": "report_03",
+        "test": "T3",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "80 - 200"
+      },
+      {
+        "report": "report_03",
+        "test": "T4",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "4.5 - 12.0"
+      },
+      {
+        "report": "report_03",
+        "test": "TSH (Ultrasensitive)",
+        "field": "name (position-matched)",
+        "gold": "TSH (Ultrasensitive)",
+        "predicted": "Thyroid Stimulating Hormone (TSH)"
+      },
+      {
+        "report": "report_03",
+        "test": "Vit D Total",
+        "field": "name (position-matched)",
+        "gold": "Vit D Total",
+        "predicted": "Vitamin D Total (25-OH)"
+      },
+      {
+        "report": "report_03",
+        "test": "Vit B12",
+        "field": "name (position-matched)",
+        "gold": "Vit B12",
+        "predicted": "Vitamin B12"
+      },
+      {
+        "report": "report_03",
+        "test": "Glycated Hb",
+        "field": "name (position-matched)",
+        "gold": "Glycated Hb",
+        "predicted": "Glycated Hemoglobin (HbA1c)"
+      },
+      {
+        "report": "report_03",
+        "test": "Glycated Hb",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "< 5.7"
+      },
+      {
+        "report": "report_05",
+        "test": "Haemoglobin",
+        "field": "name (position-matched)",
+        "gold": "Haemoglobin",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_06",
+        "test": "CRP",
+        "field": "value",
+        "gold": "< 0.5",
+        "predicted": 0.5
+      },
+      {
+        "report": "report_06",
+        "test": "E.S.R. (Westergren)",
+        "field": "name (position-matched)",
+        "gold": "E.S.R. (Westergren)",
+        "predicted": "Erythrocyte Sedimentation Rate (ESR)"
+      },
+      {
+        "report": "report_06",
+        "test": "Colour",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Clarity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "pH",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Specific Gravity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Albumin",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Sugar",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Ketones",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Leucocytes",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Erythrocytes",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Squamous Epithelial Cells",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine pH",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Specific Gravity",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Leucocytes",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Erythrocytes",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Squamous Epithelial Cells",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_08",
+        "test": "S. Cholesterol",
+        "field": "name (position-matched)",
+        "gold": "S. Cholesterol",
+        "predicted": "Total Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "TG",
+        "field": "name (position-matched)",
+        "gold": "TG",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_08",
+        "test": "HDL-C",
+        "field": "name (position-matched)",
+        "gold": "HDL-C",
+        "predicted": "HDL Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "LDL-C (Direct)",
+        "field": "name (position-matched)",
+        "gold": "LDL-C (Direct)",
+        "predicted": "LDL Cholesterol (Direct)"
+      },
+      {
+        "report": "report_08",
+        "test": "VLDL",
+        "field": "name (position-matched)",
+        "gold": "VLDL",
+        "predicted": "VLDL Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "Chol/HDL",
+        "field": "name (position-matched)",
+        "gold": "Chol/HDL",
+        "predicted": "Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_08",
+        "test": "Chol/HDL",
+        "field": "unit",
+        "gold": null,
+        "predicted": "ratio"
+      },
+      {
+        "report": "report_09",
+        "test": "Hemoglobin (Hb)",
+        "field": "name (position-matched)",
+        "gold": "Hemoglobin (Hb)",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_09",
+        "test": "Mean Corpuscular Hb",
+        "field": "name (position-matched)",
+        "gold": "Mean Corpuscular Hb",
+        "predicted": "Mean Corpuscular Hemoglobin"
+      },
+      {
+        "report": "report_09",
+        "test": "Mean Corp. Hb Conc.",
+        "field": "name (position-matched)",
+        "gold": "Mean Corp. Hb Conc.",
+        "predicted": "Mean Corpuscular Hemoglobin Concentration"
+      },
+      {
+        "report": "report_09",
+        "test": "RDW",
+        "field": "name (position-matched)",
+        "gold": "RDW",
+        "predicted": "Red Cell Distribution Width"
+      },
+      {
+        "report": "report_11",
+        "test": "Hemoglobin (Hb)",
+        "field": "name (position-matched)",
+        "gold": "Hemoglobin (Hb)",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_11",
+        "test": "RBC Count",
+        "field": "name (position-matched)",
+        "gold": "RBC Count",
+        "predicted": "Red Blood Cell Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Mean Corpuscular Hb",
+        "field": "name (position-matched)",
+        "gold": "Mean Corpuscular Hb",
+        "predicted": "Mean Corpuscular Hemoglobin"
+      },
+      {
+        "report": "report_11",
+        "test": "Mean Corp. Hb Conc.",
+        "field": "name (position-matched)",
+        "gold": "Mean Corp. Hb Conc.",
+        "predicted": "Mean Corpuscular Hemoglobin Concentration"
+      },
+      {
+        "report": "report_11",
+        "test": "RDW",
+        "field": "name (position-matched)",
+        "gold": "RDW",
+        "predicted": "Red Cell Distribution Width"
+      },
+      {
+        "report": "report_11",
+        "test": "Total Leucocyte Count",
+        "field": "name (position-matched)",
+        "gold": "Total Leucocyte Count",
+        "predicted": "Total Leukocyte Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Platelets",
+        "field": "name (position-matched)",
+        "gold": "Platelets",
+        "predicted": "Platelet Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Triglycerides",
+        "field": "name (position-matched)",
+        "gold": "Serum Triglycerides",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_11",
+        "test": "TC/HDL Ratio",
+        "field": "name (position-matched)",
+        "gold": "TC/HDL Ratio",
+        "predicted": "Total Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_11",
+        "test": "ALP",
+        "field": "name (position-matched)",
+        "gold": "ALP",
+        "predicted": "Alkaline Phosphatase"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Albumin",
+        "field": "name (position-matched)",
+        "gold": "Serum Albumin",
+        "predicted": "Albumin"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Globulin",
+        "field": "name (position-matched)",
+        "gold": "Serum Globulin",
+        "predicted": "Globulin"
+      },
+      {
+        "report": "report_11",
+        "test": "Urea",
+        "field": "name (position-matched)",
+        "gold": "Urea",
+        "predicted": "Blood Urea"
+      },
+      {
+        "report": "report_11",
+        "test": "Creatinine",
+        "field": "name (position-matched)",
+        "gold": "Creatinine",
+        "predicted": "Serum Creatinine"
+      },
+      {
+        "report": "report_11",
+        "test": "Sodium (Na+)",
+        "field": "name (position-matched)",
+        "gold": "Sodium (Na+)",
+        "predicted": "Sodium"
+      },
+      {
+        "report": "report_11",
+        "test": "Potassium (K+)",
+        "field": "name (position-matched)",
+        "gold": "Potassium (K+)",
+        "predicted": "Potassium"
+      },
+      {
+        "report": "report_11",
+        "test": "Chloride (Cl-)",
+        "field": "name (position-matched)",
+        "gold": "Chloride (Cl-)",
+        "predicted": "Chloride"
+      },
+      {
+        "report": "report_11",
+        "test": "Glycosylated Haemoglobin (HbA1c)",
+        "field": "name (position-matched)",
+        "gold": "Glycosylated Haemoglobin (HbA1c)",
+        "predicted": "Glycosylated Hemoglobin (HbA1c)"
+      },
+      {
+        "report": "report_11",
+        "test": "Glucose - Fasting",
+        "field": "name (position-matched)",
+        "gold": "Glucose - Fasting",
+        "predicted": "Fasting Blood Glucose"
+      },
+      {
+        "report": "report_11",
+        "test": "Glucose - PP",
+        "field": "name (position-matched)",
+        "gold": "Glucose - PP",
+        "predicted": "Postprandial Blood Glucose"
+      },
+      {
+        "report": "report_11",
+        "test": "Cyanocobalamin (B12)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Color",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Appearance",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Reaction (pH)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Sp. Gravity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Protein",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Glucose",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Ketone Bodies",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Pus Cells (WBC)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "RBC",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Epithelial Cells",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Vitamin B12",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine pH",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Specific Gravity",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      }
+    ]
+  },
+  "corrected": {
+    "reports": {
+      "report_01": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 0,
+        "name_exact": 10,
+        "value_ok": 14,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 14,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.7142857142857143
+      },
+      "report_02": {
+        "gold": 16,
+        "pred": 16,
+        "matched": 16,
+        "pos": 3,
+        "name_exact": 8,
+        "value_ok": 16,
+        "unit_ok": 16,
+        "range_ok": 16,
+        "full": 16,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.5
+      },
+      "report_03": {
+        "gold": 8,
+        "pred": 8,
+        "matched": 8,
+        "pos": 4,
+        "name_exact": 0,
+        "value_ok": 8,
+        "unit_ok": 8,
+        "range_ok": 5,
+        "full": 5,
+        "invented": 3,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 0.625,
+        "full_acc": 0.625,
+        "name_exact_acc": 0.0
+      },
+      "report_05": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 1,
+        "name_exact": 9,
+        "value_ok": 14,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 14,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.6428571428571429
+      },
+      "report_06": {
+        "gold": 12,
+        "pred": 7,
+        "matched": 2,
+        "pos": 1,
+        "name_exact": 0,
+        "value_ok": 1,
+        "unit_ok": 2,
+        "range_ok": 2,
+        "full": 1,
+        "invented": 0,
+        "wrong_value": 1,
+        "extra": 5,
+        "critical": 6,
+        "recall": 0.16666666666666666,
+        "precision": 0.2857142857142857,
+        "value_acc": 0.5,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.08333333333333333,
+        "name_exact_acc": 0.0
+      },
+      "report_08": {
+        "gold": 6,
+        "pred": 6,
+        "matched": 6,
+        "pos": 6,
+        "name_exact": 0,
+        "value_ok": 6,
+        "unit_ok": 5,
+        "range_ok": 6,
+        "full": 5,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 0.8333333333333334,
+        "range_acc": 1.0,
+        "full_acc": 0.8333333333333334,
+        "name_exact_acc": 0.0
+      },
+      "report_09": {
+        "gold": 14,
+        "pred": 14,
+        "matched": 14,
+        "pos": 4,
+        "name_exact": 10,
+        "value_ok": 14,
+        "unit_ok": 14,
+        "range_ok": 14,
+        "full": 14,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 0,
+        "critical": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 1.0,
+        "name_exact_acc": 0.7142857142857143
+      },
+      "report_11": {
+        "gold": 54,
+        "pred": 46,
+        "matched": 43,
+        "pos": 20,
+        "name_exact": 18,
+        "value_ok": 43,
+        "unit_ok": 43,
+        "range_ok": 43,
+        "full": 43,
+        "invented": 0,
+        "wrong_value": 0,
+        "extra": 3,
+        "critical": 3,
+        "recall": 0.7962962962962963,
+        "precision": 0.9347826086956522,
+        "value_acc": 1.0,
+        "unit_acc": 1.0,
+        "range_acc": 1.0,
+        "full_acc": 0.7962962962962963,
+        "name_exact_acc": 0.4186046511627907
+      }
+    },
+    "totals": {
+      "gold": 138,
+      "pred": 125,
+      "matched": 117,
+      "pos": 39,
+      "name_exact": 55,
+      "value_ok": 116,
+      "unit_ok": 116,
+      "range_ok": 114,
+      "full": 112,
+      "invented": 3,
+      "wrong_value": 1,
+      "extra": 8,
+      "critical": 9,
+      "recall": 0.8478260869565217,
+      "precision": 0.936,
+      "value_acc": 0.9914529914529915,
+      "unit_acc": 0.9914529914529915,
+      "range_acc": 0.9743589743589743,
+      "full_acc": 0.8115942028985508,
+      "name_exact_acc": 0.4700854700854701
+    },
+    "mismatches": [
+      {
+        "report": "report_02",
+        "test": "Serum Triglycerides",
+        "field": "name (position-matched)",
+        "gold": "Serum Triglycerides",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_02",
+        "test": "TC/HDL Ratio",
+        "field": "name (position-matched)",
+        "gold": "TC/HDL Ratio",
+        "predicted": "Total Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_02",
+        "test": "ALP",
+        "field": "name (position-matched)",
+        "gold": "ALP",
+        "predicted": "Alkaline Phosphatase"
+      },
+      {
+        "report": "report_03",
+        "test": "T3",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "80 - 200"
+      },
+      {
+        "report": "report_03",
+        "test": "T4",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "4.5 - 12.0"
+      },
+      {
+        "report": "report_03",
+        "test": "TSH (Ultrasensitive)",
+        "field": "name (position-matched)",
+        "gold": "TSH (Ultrasensitive)",
+        "predicted": "Thyroid Stimulating Hormone (TSH)"
+      },
+      {
+        "report": "report_03",
+        "test": "Vit D Total",
+        "field": "name (position-matched)",
+        "gold": "Vit D Total",
+        "predicted": "Vitamin D Total (25-OH)"
+      },
+      {
+        "report": "report_03",
+        "test": "Vit B12",
+        "field": "name (position-matched)",
+        "gold": "Vit B12",
+        "predicted": "Vitamin B12"
+      },
+      {
+        "report": "report_03",
+        "test": "Glycated Hb",
+        "field": "name (position-matched)",
+        "gold": "Glycated Hb",
+        "predicted": "Glycated Hemoglobin (HbA1c)"
+      },
+      {
+        "report": "report_03",
+        "test": "Glycated Hb",
+        "field": "reference_range",
+        "gold": null,
+        "predicted": "< 5.7"
+      },
+      {
+        "report": "report_05",
+        "test": "Haemoglobin",
+        "field": "name (position-matched)",
+        "gold": "Haemoglobin",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_06",
+        "test": "CRP",
+        "field": "value",
+        "gold": "< 0.5",
+        "predicted": 0.5
+      },
+      {
+        "report": "report_06",
+        "test": "E.S.R. (Westergren)",
+        "field": "name (position-matched)",
+        "gold": "E.S.R. (Westergren)",
+        "predicted": "Erythrocyte Sedimentation Rate (ESR)"
+      },
+      {
+        "report": "report_06",
+        "test": "Colour",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Clarity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "pH",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Specific Gravity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Albumin",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Sugar",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Ketones",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Leucocytes",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Erythrocytes",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Squamous Epithelial Cells",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine pH",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Specific Gravity",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Leucocytes",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Erythrocytes",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_06",
+        "test": "Urine Squamous Epithelial Cells",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_08",
+        "test": "S. Cholesterol",
+        "field": "name (position-matched)",
+        "gold": "S. Cholesterol",
+        "predicted": "Total Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "TG",
+        "field": "name (position-matched)",
+        "gold": "TG",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_08",
+        "test": "HDL-C",
+        "field": "name (position-matched)",
+        "gold": "HDL-C",
+        "predicted": "HDL Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "LDL-C (Direct)",
+        "field": "name (position-matched)",
+        "gold": "LDL-C (Direct)",
+        "predicted": "LDL Cholesterol (Direct)"
+      },
+      {
+        "report": "report_08",
+        "test": "VLDL",
+        "field": "name (position-matched)",
+        "gold": "VLDL",
+        "predicted": "VLDL Cholesterol"
+      },
+      {
+        "report": "report_08",
+        "test": "Chol/HDL",
+        "field": "name (position-matched)",
+        "gold": "Chol/HDL",
+        "predicted": "Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_08",
+        "test": "Chol/HDL",
+        "field": "unit",
+        "gold": null,
+        "predicted": "ratio"
+      },
+      {
+        "report": "report_09",
+        "test": "Hemoglobin (Hb)",
+        "field": "name (position-matched)",
+        "gold": "Hemoglobin (Hb)",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_09",
+        "test": "Mean Corpuscular Hb",
+        "field": "name (position-matched)",
+        "gold": "Mean Corpuscular Hb",
+        "predicted": "Mean Corpuscular Hemoglobin"
+      },
+      {
+        "report": "report_09",
+        "test": "Mean Corp. Hb Conc.",
+        "field": "name (position-matched)",
+        "gold": "Mean Corp. Hb Conc.",
+        "predicted": "Mean Corpuscular Hemoglobin Concentration"
+      },
+      {
+        "report": "report_09",
+        "test": "RDW",
+        "field": "name (position-matched)",
+        "gold": "RDW",
+        "predicted": "Red Cell Distribution Width"
+      },
+      {
+        "report": "report_11",
+        "test": "Hemoglobin (Hb)",
+        "field": "name (position-matched)",
+        "gold": "Hemoglobin (Hb)",
+        "predicted": "Hemoglobin"
+      },
+      {
+        "report": "report_11",
+        "test": "RBC Count",
+        "field": "name (position-matched)",
+        "gold": "RBC Count",
+        "predicted": "Red Blood Cell Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Mean Corpuscular Hb",
+        "field": "name (position-matched)",
+        "gold": "Mean Corpuscular Hb",
+        "predicted": "Mean Corpuscular Hemoglobin"
+      },
+      {
+        "report": "report_11",
+        "test": "Mean Corp. Hb Conc.",
+        "field": "name (position-matched)",
+        "gold": "Mean Corp. Hb Conc.",
+        "predicted": "Mean Corpuscular Hemoglobin Concentration"
+      },
+      {
+        "report": "report_11",
+        "test": "RDW",
+        "field": "name (position-matched)",
+        "gold": "RDW",
+        "predicted": "Red Cell Distribution Width"
+      },
+      {
+        "report": "report_11",
+        "test": "Total Leucocyte Count",
+        "field": "name (position-matched)",
+        "gold": "Total Leucocyte Count",
+        "predicted": "Total Leukocyte Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Platelets",
+        "field": "name (position-matched)",
+        "gold": "Platelets",
+        "predicted": "Platelet Count"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Triglycerides",
+        "field": "name (position-matched)",
+        "gold": "Serum Triglycerides",
+        "predicted": "Triglycerides"
+      },
+      {
+        "report": "report_11",
+        "test": "TC/HDL Ratio",
+        "field": "name (position-matched)",
+        "gold": "TC/HDL Ratio",
+        "predicted": "Total Cholesterol / HDL Ratio"
+      },
+      {
+        "report": "report_11",
+        "test": "ALP",
+        "field": "name (position-matched)",
+        "gold": "ALP",
+        "predicted": "Alkaline Phosphatase"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Albumin",
+        "field": "name (position-matched)",
+        "gold": "Serum Albumin",
+        "predicted": "Albumin"
+      },
+      {
+        "report": "report_11",
+        "test": "Serum Globulin",
+        "field": "name (position-matched)",
+        "gold": "Serum Globulin",
+        "predicted": "Globulin"
+      },
+      {
+        "report": "report_11",
+        "test": "Urea",
+        "field": "name (position-matched)",
+        "gold": "Urea",
+        "predicted": "Blood Urea"
+      },
+      {
+        "report": "report_11",
+        "test": "Creatinine",
+        "field": "name (position-matched)",
+        "gold": "Creatinine",
+        "predicted": "Serum Creatinine"
+      },
+      {
+        "report": "report_11",
+        "test": "Sodium (Na+)",
+        "field": "name (position-matched)",
+        "gold": "Sodium (Na+)",
+        "predicted": "Sodium"
+      },
+      {
+        "report": "report_11",
+        "test": "Potassium (K+)",
+        "field": "name (position-matched)",
+        "gold": "Potassium (K+)",
+        "predicted": "Potassium"
+      },
+      {
+        "report": "report_11",
+        "test": "Chloride (Cl-)",
+        "field": "name (position-matched)",
+        "gold": "Chloride (Cl-)",
+        "predicted": "Chloride"
+      },
+      {
+        "report": "report_11",
+        "test": "Glycosylated Haemoglobin (HbA1c)",
+        "field": "name (position-matched)",
+        "gold": "Glycosylated Haemoglobin (HbA1c)",
+        "predicted": "Glycosylated Hemoglobin (HbA1c)"
+      },
+      {
+        "report": "report_11",
+        "test": "Glucose - Fasting",
+        "field": "name (position-matched)",
+        "gold": "Glucose - Fasting",
+        "predicted": "Fasting Blood Glucose"
+      },
+      {
+        "report": "report_11",
+        "test": "Glucose - PP",
+        "field": "name (position-matched)",
+        "gold": "Glucose - PP",
+        "predicted": "Postprandial Blood Glucose"
+      },
+      {
+        "report": "report_11",
+        "test": "Cyanocobalamin (B12)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Color",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Appearance",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Reaction (pH)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Sp. Gravity",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Protein",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Glucose",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Ketone Bodies",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Pus Cells (WBC)",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "RBC",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Epithelial Cells",
+        "field": "row",
+        "gold": "in gold",
+        "predicted": "missing from prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Vitamin B12",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine pH",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      },
+      {
+        "report": "report_11",
+        "test": "Urine Specific Gravity",
+        "field": "row",
+        "gold": "not in gold",
+        "predicted": "extra in prediction"
+      }
+    ]
+  }
+}

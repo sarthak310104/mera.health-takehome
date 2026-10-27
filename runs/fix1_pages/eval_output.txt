@@ -1,0 +1,179 @@
+
+== original gold ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_01      14   14  100.0  100.0   92.9  100.0  100.0   92.9      0      1    0    71.4
+report_02      16   16  100.0  100.0  100.0  100.0  100.0  100.0      0      0    3    50.0
+report_03       8    8  100.0  100.0  100.0  100.0   62.5   62.5      3      0    4     0.0
+report_05      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    1    64.3
+report_06      12    7   16.7   28.6   50.0  100.0  100.0    8.3      0      6    1     0.0
+report_08       6    6  100.0  100.0  100.0   83.3  100.0   83.3      0      0    6     0.0
+report_09      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    4    71.4
+report_11      54   46   79.6   93.5  100.0  100.0  100.0   79.6      0      3   20    41.9
+TOTAL         138  125   84.8   93.6   98.3   99.1   97.4   80.4      3     10   39    47.0
+critical = wrong values (2) + unmatched predicted rows (8)
+
+Mismatches (original gold):
+  report_01 | Platelet Count | value | gold='304000' | pred=340000.0
+  report_02 | Serum Triglycerides | name (position-matched) | gold='Serum Triglycerides' | pred='Triglycerides'
+  report_02 | TC/HDL Ratio | name (position-matched) | gold='TC/HDL Ratio' | pred='Total Cholesterol / HDL Ratio'
+  report_02 | ALP | name (position-matched) | gold='ALP' | pred='Alkaline Phosphatase'
+  report_03 | T3 | reference_range | gold=None | pred='80 - 200'
+  report_03 | T4 | reference_range | gold=None | pred='4.5 - 12.0'
+  report_03 | TSH (Ultrasensitive) | name (position-matched) | gold='TSH (Ultrasensitive)' | pred='Thyroid Stimulating Hormone (TSH)'
+  report_03 | Vit D Total | name (position-matched) | gold='Vit D Total' | pred='Vitamin D Total (25-OH)'
+  report_03 | Vit B12 | name (position-matched) | gold='Vit B12' | pred='Vitamin B12'
+  report_03 | Glycated Hb | name (position-matched) | gold='Glycated Hb' | pred='Glycated Hemoglobin (HbA1c)'
+  report_03 | Glycated Hb | reference_range | gold=None | pred='< 5.7'
+  report_05 | Haemoglobin | name (position-matched) | gold='Haemoglobin' | pred='Hemoglobin'
+  report_06 | CRP | value | gold='< 0.5' | pred=0.5
+  report_06 | E.S.R. (Westergren) | name (position-matched) | gold='E.S.R. (Westergren)' | pred='Erythrocyte Sedimentation Rate (ESR)'
+  report_06 | Colour | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Clarity | row | gold='in gold' | pred='missing from prediction'
+  report_06 | pH | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Specific Gravity | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Albumin | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Sugar | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Ketones | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Leucocytes | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Erythrocytes | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Squamous Epithelial Cells | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Urine pH | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Specific Gravity | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Leucocytes | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Erythrocytes | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Squamous Epithelial Cells | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | S. Cholesterol | name (position-matched) | gold='S. Cholesterol' | pred='Total Cholesterol'
+  report_08 | TG | name (position-matched) | gold='TG' | pred='Triglycerides'
+  report_08 | HDL-C | name (position-matched) | gold='HDL-C' | pred='HDL Cholesterol'
+  report_08 | LDL-C (Direct) | name (position-matched) | gold='LDL-C (Direct)' | pred='LDL Cholesterol (Direct)'
+  report_08 | VLDL | name (position-matched) | gold='VLDL' | pred='VLDL Cholesterol'
+  report_08 | Chol/HDL | name (position-matched) | gold='Chol/HDL' | pred='Cholesterol / HDL Ratio'
+  report_08 | Chol/HDL | unit | gold=None | pred='ratio'
+  report_09 | Hemoglobin (Hb) | name (position-matched) | gold='Hemoglobin (Hb)' | pred='Hemoglobin'
+  report_09 | Mean Corpuscular Hb | name (position-matched) | gold='Mean Corpuscular Hb' | pred='Mean Corpuscular Hemoglobin'
+  report_09 | Mean Corp. Hb Conc. | name (position-matched) | gold='Mean Corp. Hb Conc.' | pred='Mean Corpuscular Hemoglobin Concentration'
+  report_09 | RDW | name (position-matched) | gold='RDW' | pred='Red Cell Distribution Width'
+  report_11 | Hemoglobin (Hb) | name (position-matched) | gold='Hemoglobin (Hb)' | pred='Hemoglobin'
+  report_11 | RBC Count | name (position-matched) | gold='RBC Count' | pred='Red Blood Cell Count'
+  report_11 | Mean Corpuscular Hb | name (position-matched) | gold='Mean Corpuscular Hb' | pred='Mean Corpuscular Hemoglobin'
+  report_11 | Mean Corp. Hb Conc. | name (position-matched) | gold='Mean Corp. Hb Conc.' | pred='Mean Corpuscular Hemoglobin Concentration'
+  report_11 | RDW | name (position-matched) | gold='RDW' | pred='Red Cell Distribution Width'
+  report_11 | Total Leucocyte Count | name (position-matched) | gold='Total Leucocyte Count' | pred='Total Leukocyte Count'
+  report_11 | Platelets | name (position-matched) | gold='Platelets' | pred='Platelet Count'
+  report_11 | Serum Triglycerides | name (position-matched) | gold='Serum Triglycerides' | pred='Triglycerides'
+  report_11 | TC/HDL Ratio | name (position-matched) | gold='TC/HDL Ratio' | pred='Total Cholesterol / HDL Ratio'
+  report_11 | ALP | name (position-matched) | gold='ALP' | pred='Alkaline Phosphatase'
+  report_11 | Serum Albumin | name (position-matched) | gold='Serum Albumin' | pred='Albumin'
+  report_11 | Serum Globulin | name (position-matched) | gold='Serum Globulin' | pred='Globulin'
+  report_11 | Urea | name (position-matched) | gold='Urea' | pred='Blood Urea'
+  report_11 | Creatinine | name (position-matched) | gold='Creatinine' | pred='Serum Creatinine'
+  report_11 | Sodium (Na+) | name (position-matched) | gold='Sodium (Na+)' | pred='Sodium'
+  report_11 | Potassium (K+) | name (position-matched) | gold='Potassium (K+)' | pred='Potassium'
+  report_11 | Chloride (Cl-) | name (position-matched) | gold='Chloride (Cl-)' | pred='Chloride'
+  report_11 | Glycosylated Haemoglobin (HbA1c) | name (position-matched) | gold='Glycosylated Haemoglobin (HbA1c)' | pred='Glycosylated Hemoglobin (HbA1c)'
+  report_11 | Glucose - Fasting | name (position-matched) | gold='Glucose - Fasting' | pred='Fasting Blood Glucose'
+  report_11 | Glucose - PP | name (position-matched) | gold='Glucose - PP' | pred='Postprandial Blood Glucose'
+  report_11 | Cyanocobalamin (B12) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Color | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Appearance | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Reaction (pH) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Sp. Gravity | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Protein | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Glucose | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Ketone Bodies | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Pus Cells (WBC) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | RBC | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Epithelial Cells | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Vitamin B12 | row | gold='not in gold' | pred='extra in prediction'
+  report_11 | Urine pH | row | gold='not in gold' | pred='extra in prediction'
+  report_11 | Urine Specific Gravity | row | gold='not in gold' | pred='extra in prediction'
+
+== corrected gold ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_01      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0    71.4
+report_02      16   16  100.0  100.0  100.0  100.0  100.0  100.0      0      0    3    50.0
+report_03       8    8  100.0  100.0  100.0  100.0   62.5   62.5      3      0    4     0.0
+report_05      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    1    64.3
+report_06      12    7   16.7   28.6   50.0  100.0  100.0    8.3      0      6    1     0.0
+report_08       6    6  100.0  100.0  100.0   83.3  100.0   83.3      0      0    6     0.0
+report_09      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    4    71.4
+report_11      54   46   79.6   93.5  100.0  100.0  100.0   79.6      0      3   20    41.9
+TOTAL         138  125   84.8   93.6   99.1   99.1   97.4   81.2      3      9   39    47.0
+critical = wrong values (1) + unmatched predicted rows (8)
+
+Mismatches (corrected gold):
+  report_02 | Serum Triglycerides | name (position-matched) | gold='Serum Triglycerides' | pred='Triglycerides'
+  report_02 | TC/HDL Ratio | name (position-matched) | gold='TC/HDL Ratio' | pred='Total Cholesterol / HDL Ratio'
+  report_02 | ALP | name (position-matched) | gold='ALP' | pred='Alkaline Phosphatase'
+  report_03 | T3 | reference_range | gold=None | pred='80 - 200'
+  report_03 | T4 | reference_range | gold=None | pred='4.5 - 12.0'
+  report_03 | TSH (Ultrasensitive) | name (position-matched) | gold='TSH (Ultrasensitive)' | pred='Thyroid Stimulating Hormone (TSH)'
+  report_03 | Vit D Total | name (position-matched) | gold='Vit D Total' | pred='Vitamin D Total (25-OH)'
+  report_03 | Vit B12 | name (position-matched) | gold='Vit B12' | pred='Vitamin B12'
+  report_03 | Glycated Hb | name (position-matched) | gold='Glycated Hb' | pred='Glycated Hemoglobin (HbA1c)'
+  report_03 | Glycated Hb | reference_range | gold=None | pred='< 5.7'
+  report_05 | Haemoglobin | name (position-matched) | gold='Haemoglobin' | pred='Hemoglobin'
+  report_06 | CRP | value | gold='< 0.5' | pred=0.5
+  report_06 | E.S.R. (Westergren) | name (position-matched) | gold='E.S.R. (Westergren)' | pred='Erythrocyte Sedimentation Rate (ESR)'
+  report_06 | Colour | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Clarity | row | gold='in gold' | pred='missing from prediction'
+  report_06 | pH | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Specific Gravity | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Albumin | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Sugar | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Ketones | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Leucocytes | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Erythrocytes | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Squamous Epithelial Cells | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Urine pH | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Specific Gravity | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Leucocytes | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Erythrocytes | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Squamous Epithelial Cells | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | S. Cholesterol | name (position-matched) | gold='S. Cholesterol' | pred='Total Cholesterol'
+  report_08 | TG | name (position-matched) | gold='TG' | pred='Triglycerides'
+  report_08 | HDL-C | name (position-matched) | gold='HDL-C' | pred='HDL Cholesterol'
+  report_08 | LDL-C (Direct) | name (position-matched) | gold='LDL-C (Direct)' | pred='LDL Cholesterol (Direct)'
+  report_08 | VLDL | name (position-matched) | gold='VLDL' | pred='VLDL Cholesterol'
+  report_08 | Chol/HDL | name (position-matched) | gold='Chol/HDL' | pred='Cholesterol / HDL Ratio'
+  report_08 | Chol/HDL | unit | gold=None | pred='ratio'
+  report_09 | Hemoglobin (Hb) | name (position-matched) | gold='Hemoglobin (Hb)' | pred='Hemoglobin'
+  report_09 | Mean Corpuscular Hb | name (position-matched) | gold='Mean Corpuscular Hb' | pred='Mean Corpuscular Hemoglobin'
+  report_09 | Mean Corp. Hb Conc. | name (position-matched) | gold='Mean Corp. Hb Conc.' | pred='Mean Corpuscular Hemoglobin Concentration'
+  report_09 | RDW | name (position-matched) | gold='RDW' | pred='Red Cell Distribution Width'
+  report_11 | Hemoglobin (Hb) | name (position-matched) | gold='Hemoglobin (Hb)' | pred='Hemoglobin'
+  report_11 | RBC Count | name (position-matched) | gold='RBC Count' | pred='Red Blood Cell Count'
+  report_11 | Mean Corpuscular Hb | name (position-matched) | gold='Mean Corpuscular Hb' | pred='Mean Corpuscular Hemoglobin'
+  report_11 | Mean Corp. Hb Conc. | name (position-matched) | gold='Mean Corp. Hb Conc.' | pred='Mean Corpuscular Hemoglobin Concentration'
+  report_11 | RDW | name (position-matched) | gold='RDW' | pred='Red Cell Distribution Width'
+  report_11 | Total Leucocyte Count | name (position-matched) | gold='Total Leucocyte Count' | pred='Total Leukocyte Count'
+  report_11 | Platelets | name (position-matched) | gold='Platelets' | pred='Platelet Count'
+  report_11 | Serum Triglycerides | name (position-matched) | gold='Serum Triglycerides' | pred='Triglycerides'
+  report_11 | TC/HDL Ratio | name (position-matched) | gold='TC/HDL Ratio' | pred='Total Cholesterol / HDL Ratio'
+  report_11 | ALP | name (position-matched) | gold='ALP' | pred='Alkaline Phosphatase'
+  report_11 | Serum Albumin | name (position-matched) | gold='Serum Albumin' | pred='Albumin'
+  report_11 | Serum Globulin | name (position-matched) | gold='Serum Globulin' | pred='Globulin'
+  report_11 | Urea | name (position-matched) | gold='Urea' | pred='Blood Urea'
+  report_11 | Creatinine | name (position-matched) | gold='Creatinine' | pred='Serum Creatinine'
+  report_11 | Sodium (Na+) | name (position-matched) | gold='Sodium (Na+)' | pred='Sodium'
+  report_11 | Potassium (K+) | name (position-matched) | gold='Potassium (K+)' | pred='Potassium'
+  report_11 | Chloride (Cl-) | name (position-matched) | gold='Chloride (Cl-)' | pred='Chloride'
+  report_11 | Glycosylated Haemoglobin (HbA1c) | name (position-matched) | gold='Glycosylated Haemoglobin (HbA1c)' | pred='Glycosylated Hemoglobin (HbA1c)'
+  report_11 | Glucose - Fasting | name (position-matched) | gold='Glucose - Fasting' | pred='Fasting Blood Glucose'
+  report_11 | Glucose - PP | name (position-matched) | gold='Glucose - PP' | pred='Postprandial Blood Glucose'
+  report_11 | Cyanocobalamin (B12) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Color | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Appearance | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Reaction (pH) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Sp. Gravity | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Protein | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Glucose | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Ketone Bodies | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Pus Cells (WBC) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | RBC | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Epithelial Cells | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Vitamin B12 | row | gold='not in gold' | pred='extra in prediction'
+  report_11 | Urine pH | row | gold='not in gold' | pred='extra in prediction'
+  report_11 | Urine Specific Gravity | row | gold='not in gold' | pred='extra in prediction'
+
+Wrote runs\fix1_pages\eval.json
