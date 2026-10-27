@@ -31,3 +31,6 @@ I reported eval table columns running together. Claude Code said the format stri
 
 ## 17:44, Wrong result, personal check
 report_08 (JPG, unaffected by Fix 1) dropped to 0%. Hand-checked runs/fix1_pages/report_08.json: all 6 values correct. Eval had fuzzy-matched S. Cholesterol to HDL Cholesterol. Removed fuzzy matching (v3) and rescored all runs.
+
+## 19:47, Log for prompt examples
+Prompt examples were copied from sample reports, a risk of overfitting. Ablation without them scored 100% as well, so I removed them.
