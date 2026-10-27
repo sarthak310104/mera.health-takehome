@@ -37,28 +37,29 @@ Rules:
 MEDIA_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png"}
 
 
-def load_image(path: Path) -> tuple[str, str]:
-    """Return (media_type, base64 data) for the report."""
+def load_image(path: Path) -> list[tuple[str, str]]:
+    """Return [(media_type, base64 data), ...] for the report, one entry per page."""
     if path.suffix.lower() == ".pdf":
         with tempfile.TemporaryDirectory() as directory:
             prefix = Path(directory) / "page"
             try:
-                subprocess.run(["pdftoppm", "-f", "1", "-l", "1", "-singlefile", "-r", str(DPI),
-                                "-png", str(path), str(prefix)], check=True, capture_output=True)
+                subprocess.run(["pdftoppm", "-r", str(DPI), "-png", str(path), str(prefix)],
+                               check=True, capture_output=True)
             except FileNotFoundError:
                 raise RuntimeError("Install Poppler (pdftoppm); see README.md.") from None
-            png = prefix.with_suffix(".png").read_bytes()
-        return "image/png", base64.standard_b64encode(png).decode()
-    return MEDIA_TYPES[path.suffix.lower()], base64.standard_b64encode(path.read_bytes()).decode()
+            pages = sorted(Path(directory).glob("page-*.png"))
+            return [("image/png", base64.standard_b64encode(p.read_bytes()).decode()) for p in pages]
+    return [(MEDIA_TYPES[path.suffix.lower()], base64.standard_b64encode(path.read_bytes()).decode())]
 
 
-def call_model(media_type: str, data: str) -> str:
+def call_model(images: list[tuple[str, str]]) -> str:
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise RuntimeError("Set GEMINI_API_KEY; see README.md. No API call made.")
     body = {
         "contents": [{"role": "user", "parts": [
-            {"inlineData": {"mimeType": media_type, "data": data}}, {"text": PROMPT},
+            *({"inlineData": {"mimeType": media_type, "data": data}} for media_type, data in images),
+            {"text": PROMPT},
         ]}],
         "generationConfig": {"temperature": 0, "maxOutputTokens": 16000},
     }
@@ -108,8 +109,7 @@ def clean(tests: list[dict]) -> list[dict]:
 
 
 def extract(path: Path) -> dict:
-    media_type, data = load_image(path)
-    return {"tests": clean(parse(call_model(media_type, data)))}
+    return {"tests": clean(parse(call_model(load_image(path))))}
 
 
 if __name__ == "__main__":
