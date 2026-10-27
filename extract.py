@@ -19,19 +19,19 @@ from pathlib import Path
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 DPI = 60
 
-PROMPT = """You are an expert at reading medical lab reports.
+PROMPT = """Extract every test result row from this lab report.
 
-Look at this lab report and extract every test result from it.
-
-Return JSON in exactly this format:
-{"tests": [{"test_name": "...", "value": 0.0, "unit": "...", "reference_range": "...", "status": "normal"}]}
+Return only JSON: {"tests": [{"test_name": "...", "value": "...", "unit": "...", "reference_range": "..."}]}
 
 Rules:
-- Use the standard medical name for each test.
-- value must be a number.
-- If a reference range is missing from the report, fill in the standard reference range for that test.
-- status is "normal", "high" or "low", based on the value and the reference range.
-- Be thorough. Do not miss any tests.
+- One entry per result row, in the order printed, across all pages.
+- test_name: exactly as printed, including abbreviations and brackets. Do not expand or standardise names.
+- value: a string, copied exactly as printed. Keep symbols, text and formatting: "< 0.5", "1-2", "Negative", "Present (+)", "2,03,000". Never round, convert, average or calculate.
+- unit: as printed, or null if none. If the unit is printed inside the reference range column, put it in unit and leave it out of reference_range.
+- reference_range: exactly as printed, or null if the report does not print one. Never fill in a range from your own knowledge.
+- If a value cannot be read, use null. Never work it out from other rows.
+- Ignore handwritten notes, comments, method lines and patient details.
+- If the document contains no test results (for example a prescription or a list of advised tests), return {"tests": []}.
 """
 
 MEDIA_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png"}
@@ -88,22 +88,14 @@ def parse(text: str) -> list[dict]:
         return []
 
 
-def to_number(value):
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return None
-
-
 def clean(tests: list[dict]) -> list[dict]:
     out = []
     for t in tests:
         out.append({
             "test_name": str(t.get("test_name", "")).strip(),
-            "value": to_number(t.get("value")),
+            "value": None if t.get("value") is None else str(t["value"]).strip(),
             "unit": t.get("unit") or None,
             "reference_range": t.get("reference_range") or None,
-            "status": t.get("status"),
         })
     return out
 

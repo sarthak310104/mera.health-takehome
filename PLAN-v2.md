@@ -28,3 +28,6 @@ Claude Code saved hand-label results to a separate file (eval_labels_hand.json) 
 
 ## 17:18, Agent pushback on column spacing
 I reported eval table columns running together. Claude Code said the format string was correct. I read the code myself (eval.py line 164): it was right. Spaces were lost in copying the terminal output. No change made.
+
+## 17:44, Wrong result, personal check
+report_08 (JPG, unaffected by Fix 1) dropped to 0%. Hand-checked runs/fix1_pages/report_08.json: all 6 values correct. Eval had fuzzy-matched S. Cholesterol to HDL Cholesterol. Removed fuzzy matching (v3) and rescored all runs.
