@@ -8,7 +8,8 @@ output goes to eval_<dir>.json). A labels file with an empty tests list makes ev
 
 --strict reproduces v1 (name equality, abbreviation, similarity >= 0.8 only; no trailing-unit stripping on
 reference ranges) and writes eval_strict.json.
-Otherwise names also match on equal word sets, and leftover rows are paired by position within gaps.
+Otherwise (v3) names match only on exact normalised name, parenthetical abbreviation or equal word sets (no
+difflib similarity), and leftover rows are paired by position within gaps.
 
 Optional gold_corrections.json: {"report_01": [{"test_name": "...", "field": "value", "corrected": "...",
 "evidence": "..."}]} overrides that field of the named gold row; scores are then printed for original and corrected gold.
@@ -34,9 +35,9 @@ def similarity(a, b, strict=False) -> float:
     na, nb = norm(a), norm(b)
     if na == nb or (na and na in abbrs(b)) or (nb and nb in abbrs(a)):
         return 1.0
-    if not strict and set(na.split()) == set(nb.split()):
-        return 1.0
-    return difflib.SequenceMatcher(None, na, nb).ratio()
+    if strict:
+        return difflib.SequenceMatcher(None, na, nb).ratio()
+    return 1.0 if set(na.split()) == set(nb.split()) else 0.0
 
 
 def match_rows(gold, pred, strict=False):
