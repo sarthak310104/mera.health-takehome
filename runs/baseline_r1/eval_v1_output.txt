@@ -1,0 +1,84 @@
+== original gold ==
+report       gold pred recall   prec  value   unit  range   full invent critic
+report_01      14   14  100.0  100.0   92.9  100.0  100.0   92.9      0      1
+report_02      16   16   87.5   87.5  100.0  100.0  100.0   87.5      0      2
+report_03       8    8   75.0   75.0  100.0  100.0   66.7   50.0      2      2
+report_05      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0
+report_06      12    7   33.3   57.1   25.0  100.0   25.0    8.3      0      6
+report_08       6    6   16.7   16.7  100.0  100.0  100.0   16.7      0      5
+report_09      14   14   71.4   71.4  100.0  100.0  100.0   71.4      0      4
+report_11      54   30   55.6  100.0  100.0  100.0  100.0   55.6      0      0
+TOTAL         138  109   67.4   85.3   95.7  100.0   94.6   63.0      2     20
+critical = wrong values (4) + unmatched predicted rows (16)
+
+Mismatches (original gold):
+  report_01 | Platelet Count | value | gold='304000' | pred=340000.0
+  report_02 | ALP | row | gold='in gold' | pred='missing from prediction'
+  report_02 | Protein Total | row | gold='in gold' | pred='missing from prediction'
+  report_02 | Alkaline Phosphatase | row | gold='not in gold' | pred='extra in prediction'
+  report_02 | Total Protein | row | gold='not in gold' | pred='extra in prediction'
+  report_03 | T3 | reference_range | gold=None | pred='80 - 200 ng/dL'
+  report_03 | T4 | reference_range | gold=None | pred='4.5 - 12.0 µg/dL'
+  report_03 | Vit B12 | row | gold='in gold' | pred='missing from prediction'
+  report_03 | Glycated Hb | row | gold='in gold' | pred='missing from prediction'
+  report_03 | Vitamin B12 | row | gold='not in gold' | pred='extra in prediction'
+  report_03 | Glycated Hemoglobin (HbA1c) | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | CRP | value | gold='< 0.5' | pred=0.5
+  report_06 | CRP | reference_range | gold='< 5.0' | pred='< 5.0 mg/L'
+  report_06 | Squamous Epithelial Cells | value | gold='1-2' | pred=1.5
+  report_06 | Squamous Epithelial Cells | reference_range | gold='0 - 5' | pred='0 - 5 /hpf'
+  report_06 | Erythrocytes | value | gold='1-2' | pred=1.5
+  report_06 | Erythrocytes | reference_range | gold='Nil' | pred='Nil /hpf'
+  report_06 | Colour | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Clarity | row | gold='in gold' | pred='missing from prediction'
+  report_06 | pH | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Albumin | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Sugar | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Ketones | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Leucocytes | row | gold='in gold' | pred='missing from prediction'
+  report_06 | E.S.R. (Westergren) | row | gold='in gold' | pred='missing from prediction'
+  report_06 | Urine pH | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Urine Leukocytes | row | gold='not in gold' | pred='extra in prediction'
+  report_06 | Erythrocyte Sedimentation Rate (ESR) | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | TG | row | gold='in gold' | pred='missing from prediction'
+  report_08 | HDL-C | row | gold='in gold' | pred='missing from prediction'
+  report_08 | LDL-C (Direct) | row | gold='in gold' | pred='missing from prediction'
+  report_08 | VLDL | row | gold='in gold' | pred='missing from prediction'
+  report_08 | Chol/HDL | row | gold='in gold' | pred='missing from prediction'
+  report_08 | Triglycerides | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | HDL Cholesterol | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | LDL Cholesterol | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | VLDL Cholesterol | row | gold='not in gold' | pred='extra in prediction'
+  report_08 | Cholesterol / HDL Ratio | row | gold='not in gold' | pred='extra inprediction'
+  report_09 | RBC Count | row | gold='in gold' | pred='missing from prediction'
+  report_09 | Mean Corp. Hb Conc. | row | gold='in gold' | pred='missing from prediction'
+  report_09 | RDW | row | gold='in gold' | pred='missing from prediction'
+  report_09 | Platelets | row | gold='in gold' | pred='missing from prediction'
+  report_09 | Red Blood Cell Count | row | gold='not in gold' | pred='extra in prediction'
+  report_09 | Mean Corpuscular Hemoglobin Concentration | row | gold='not in gold' | pred='extra in prediction'
+  report_09 | Red Cell Distribution Width | row | gold='not in gold' | pred='extra in prediction'
+  report_09 | Platelet Count | row | gold='not in gold' | pred='extra in prediction'
+  report_11 | Urea | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Creatinine | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Serum Uric Acid | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Sodium (Na+) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Potassium (K+) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Chloride (Cl-) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Triiodothyronine (T3) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Thyroxine (T4) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Thyroid Stimulating Hormone | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Glycosylated Haemoglobin (HbA1c) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Glucose - Fasting | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Glucose - PP | row | gold='in gold' | pred='missing from prediction'
+  report_11 | 25-Hydroxy Vitamin D | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Cyanocobalamin (B12) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Color | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Appearance | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Reaction (pH) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Sp. Gravity | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Protein | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Urine Glucose | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Ketone Bodies | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Pus Cells (WBC) | row | gold='in gold' | pred='missing from prediction'
+  report_11 | RBC | row | gold='in gold' | pred='missing from prediction'
+  report_11 | Epithelial Cells | row | gold='in gold' | pred='missing from prediction'
