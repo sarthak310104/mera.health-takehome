@@ -1,0 +1,2 @@
+runs/baseline_r1: ok 12/12 | in 1242 out 1998 tok (from 12 with usage) | $0.00843/report $84.25/10k | latency s mean 16.7 median 15.0 max 37.2 | failed attempts 0
+runs/final: ok 12/12 | in 1425 out 671 tok (from 12 with usage) | $0.00359/report $35.85/10k | latency s mean 7.8 median 6.6 max 18.0 | failed attempts 0
