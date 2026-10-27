@@ -61,7 +61,7 @@ def call_model(images: list[tuple[str, str]]) -> str:
             *({"inlineData": {"mimeType": media_type, "data": data}} for media_type, data in images),
             {"text": PROMPT},
         ]}],
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 16000},
+        "generationConfig": {"temperature": 0, "maxOutputTokens": 16000, "thinkingConfig": {"thinkingLevel": "low"}},
     }
     request = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent",
