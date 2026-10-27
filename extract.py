@@ -34,6 +34,17 @@ Rules:
 - If the document contains no test results (for example a prescription or a list of advised tests), return {"tests": []}.
 """
 
+VALUE_NOEXAMPLES = "- value: a string, copied exactly as printed, including any symbols or text. Never round, convert, average or calculate."
+VARIANTS = {
+    "default": PROMPT,
+    "noexamples": "\n".join(VALUE_NOEXAMPLES if line.startswith("- value:") else line
+                            for line in PROMPT.splitlines()) + "\n",
+}
+VARIANT = os.environ.get("PROMPT_VARIANT", "default")
+if VARIANT not in VARIANTS:
+    sys.exit(f"Unknown PROMPT_VARIANT {VARIANT!r}; use one of {sorted(VARIANTS)}.")
+PROMPT = VARIANTS[VARIANT]
+
 MEDIA_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png"}
 
 
