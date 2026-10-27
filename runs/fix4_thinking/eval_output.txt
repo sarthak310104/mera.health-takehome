@@ -1,0 +1,33 @@
+
+== original gold ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_01      14   14  100.0  100.0   92.9  100.0  100.0   92.9      0      1    0   100.0
+report_02      16   16  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_03       8    8  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_05      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_06      12   12  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_08       6    6  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_09      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_11      54   54  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+TOTAL         138  138  100.0  100.0   99.3  100.0  100.0   99.3      0      1    0   100.0
+critical = wrong values (1) + unmatched predicted rows (0)
+
+Mismatches (original gold):
+  report_01 | Platelet Count | value | gold='304000' | pred='340000'
+
+== corrected gold ==
+report       gold pred recall   prec  value   unit  range   full invent critic  pos  nameEx
+report_01      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_02      16   16  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_03       8    8  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_05      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_06      12   12  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_08       6    6  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_09      14   14  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+report_11      54   54  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+TOTAL         138  138  100.0  100.0  100.0  100.0  100.0  100.0      0      0    0   100.0
+critical = wrong values (0) + unmatched predicted rows (0)
+
+Mismatches (corrected gold):
+
+Wrote runs\fix4_thinking\eval.json
