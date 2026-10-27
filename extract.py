@@ -17,7 +17,7 @@ import urllib.request
 from pathlib import Path
 
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
-DPI = 150
+DPI = 60
 
 PROMPT = """Extract every test result row from this lab report.
 
