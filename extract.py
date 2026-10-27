@@ -26,24 +26,13 @@ Return only JSON: {"tests": [{"test_name": "...", "value": "...", "unit": "...",
 Rules:
 - One entry per result row, in the order printed, across all pages.
 - test_name: exactly as printed, including abbreviations and brackets. Do not expand or standardise names.
-- value: a string, copied exactly as printed. Keep symbols, text and formatting: "< 0.5", "1-2", "Negative", "Present (+)", "2,03,000". Never round, convert, average or calculate.
+- value: a string, copied exactly as printed, including any symbols or text. Never round, convert, average or calculate.
 - unit: as printed, or null if none. If the unit is printed inside the reference range column, put it in unit and leave it out of reference_range.
 - reference_range: exactly as printed, or null if the report does not print one. Never fill in a range from your own knowledge.
 - If a value cannot be read, use null. Never work it out from other rows.
 - Ignore handwritten notes, comments, method lines and patient details.
 - If the document contains no test results (for example a prescription or a list of advised tests), return {"tests": []}.
 """
-
-VALUE_NOEXAMPLES = "- value: a string, copied exactly as printed, including any symbols or text. Never round, convert, average or calculate."
-VARIANTS = {
-    "default": PROMPT,
-    "noexamples": "\n".join(VALUE_NOEXAMPLES if line.startswith("- value:") else line
-                            for line in PROMPT.splitlines()) + "\n",
-}
-VARIANT = os.environ.get("PROMPT_VARIANT", "default")
-if VARIANT not in VARIANTS:
-    sys.exit(f"Unknown PROMPT_VARIANT {VARIANT!r}; use one of {sorted(VARIANTS)}.")
-PROMPT = VARIANTS[VARIANT]
 
 MEDIA_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png"}
 
